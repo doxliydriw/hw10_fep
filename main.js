@@ -5,9 +5,9 @@ for (i in users) {
     var check = ((users[i])['balance'])
     // console.log(check)
     check = +check.replace(/[$,]/g, "")
+    var res_summ = res_summ + check
     if (check > 2000) {
         // console.log(check)
-        var res_summ = res_summ + check
         res_arr.push(users[i])
         // console.log(users[i])
         }
